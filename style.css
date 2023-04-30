@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(to bottom, #2196f3, #1e88e5);
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+#Clock-container {
+  margin-top: 80px;
+  font-size: 60px;
+  letter-spacing: 3px;
+}
+
+.alarm {
+  margin-top: 40px;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+#btn , #sbtn{
+    background-color: #4CAF50;
+    border: none; 
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center;  
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px;
+    cursor: pointer; 
+    border-radius: 8px; 
+
+}
+#btn:hover{
+  background-color: #377a39;
+}
+#sbtn{
+  background-color: #e26429;
+}
+#sbtn:hover{
+  background-color: #a35b39;
+}
+input[type="time"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #333;
+  font-size: 20px;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  #Clock-container {
+    font-size: 40px;
+  }
+  input[type="time"] {
+    margin: 10px;
+    width: 30vw;
+  }
+
+  .alarm {
+    font-size: 20px;
+    display: flex;
+  }
+  #btn , #sbtn{
+    padding: 2rem;
+  }
+  
+}
