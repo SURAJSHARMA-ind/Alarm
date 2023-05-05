@@ -40,6 +40,6 @@ if(alarmplayed===false){
 stopbutton.addEventListener("click",()=>{
   alarmsound.pause();
   alarmplayed=true;
-  console.log("new add")
+ 
 
 })
