@@ -13,7 +13,7 @@ button.addEventListener("click", function () {
 });
 setInterval(() => {
   d = new Date();
-  htime = d.getHours();
+  htime = d.getHours().toString().padStart(2, "0");
 
   //  padStart() method to add a leading zero if the value is a single digit.
   // The padStart() method takes two arguments: the first argument is the total length of the resulting string (including the original string), and the second argument is the character to use for padding (in this case, the character is "0").
